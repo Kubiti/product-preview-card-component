@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', 'Fraunces', 'Courier New', Courier, monospace;
+}
+
+
+main {
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer {
+    height: 450px;
+    width: 600px;
+    background-color: white;
+    display: flex;
+    border-radius: 10px;
+}
+
+.inner-div-left {
+    flex: 0.5;
+    background-image: url('./images/image-product-desktop.jpg');
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.inner-div-right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-family: 'Fraunces';
+}
+
+button {
+    width: 80%;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    border: 0;
+    border-radius: 7px;
+    padding: 10px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+button:hover {
+    background-color: hsl(138, 36%, 27%);
+}
+
+#cart {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.price {
+    margin: 10px 20px;
+    display: flex;
+}
+
+h1 {
+    font-size: 1.85rem;
+    margin: 10px 20px;
+    font-weight: 900;
+}
+
+h2 {
+    color: hsl(158, 36%, 37%);
+    padding-right: 20px;
+}
+
+.inner-div-right > h3 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 10px 20px;
+}
+
+p {
+    margin: 10px 20px;
+}
+
+.gray {
+    color: rgba(50, 51, 50, 0.8);
+}
+
+
+.attribution {
+    height: 2em;
+}  
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 2em 1em;
+        align-items: flex-start;
+        height: max-content;
+        background: linear-gradient(180deg, hsl(30, 38%, 92%), hsl(30, 38%, 99%));
+    }
+
+    .outer {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .inner-div-left {
+        background-size: cover;
+        object-position: 0 80%;
+        background-position: 10% 45%;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .inner-div-right {
+        padding: 20px 0;
+    }
+
+    .inner-div-right > h3 {
+        letter-spacing: 7px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    .price h3 {
+        color: rgba(50, 51, 50, 0.5);
+    }
+
+}

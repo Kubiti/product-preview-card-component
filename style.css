@@ -98,6 +98,24 @@ p {
     height: 2em;
 }  
 
+.desktop {
+    display: none;
+}
+
+footer {
+    height: 15px;
+    padding: 15px 0 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(158, 36%, 37%) !important;
+}
+
+a:hover {
+    color: hsl(136, 41%, 20%) !important;
+}
+
 
 
 
@@ -116,9 +134,8 @@ p {
     }
 
     .inner-div-left {
+        background: url('./images/image-product-mobile.jpg');
         background-size: cover;
-        object-position: 0 80%;
-        background-position: 10% 45%;
         border-radius: 10px 10px 0 0;
     }
 
@@ -141,5 +158,16 @@ p {
     .price h3 {
         color: rgba(50, 51, 50, 0.5);
     }
+
+    img {
+        width: 5em;
+    }
+
+
+    .mobile {
+        display: none;
+        color: black;
+    }
+    
 
 }
